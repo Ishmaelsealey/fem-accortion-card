@@ -15,7 +15,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: hsl(237deg, 12%, 33%);
 }
 
 main {
@@ -37,16 +36,7 @@ main {
   padding: 0 2em 4em;
 }
 
-.desktopBgPattern {
-  display: none;
-}
-
-.womanIllustrationDesktop {
-  display: none;
-  position: absolute;
-}
-
-.box {
+.desktopBgPattern, .box, .womanIllustrationDesktop {
   display: none;
 }
 
@@ -69,16 +59,11 @@ hr {
 }
 
 h1 {
-  text-transform: uppercase;
   font-weight: 700;
   text-align: center;
   font-size: 3em;
   margin-bottom: 1em;
   color: hsl(238deg, 29%, 16%);
-}
-
-.faqSection {
-  width: 100%;
 }
 
 .dropdownbutton {
@@ -113,6 +98,7 @@ h1 {
 }
 
 .faqanswer {
+  color: hsl(240deg, 6%, 50%);
   margin-top: 0.5em;
   margin-right: 1em;
   line-height: 1.5em;
@@ -130,17 +116,6 @@ h1 {
 }
 
 @media screen and (min-width: 800px) {
-  .womanIllustrationDesktop {
-    display: block;
-    margin-left: -5em;
-    z-index: 1;
-  }
-  .womanIllustrationMobile {
-    display: none;
-  }
-  .drop-shadow {
-    display: none;
-  }
   main {
     display: grid;
     grid-template-columns: 450px 1fr;
@@ -173,14 +148,24 @@ h1 {
     top: -27em;
     margin-left: -46em;
   }
+  #image .womanIllustrationDesktop {
+    position: absolute;
+    display: block;
+    margin-left: -5em;
+    z-index: 1;
+  }
+  #image .womanIllustrationMobile, #image .drop-shadow {
+    display: none;
+  }
   #faq {
     padding: 5em 3em 5em 0;
   }
-  .attribution {
-    margin: 2em;
-  }
-  h1 {
+  #faq h1 {
     text-align: left;
+  }
+  .attribution {
+    position: fixed;
+    bottom: 1em;
   }
 }
 
