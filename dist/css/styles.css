@@ -127,6 +127,7 @@ h1 {
   .womanIllustrationDesktop {
     display: block;
     margin-left: -5em;
+    z-index: 1;
   }
   .womanIllustrationMobile {
     display: none;
@@ -154,9 +155,16 @@ h1 {
     position: absolute;
     top: 14em;
     right: 29em;
+    z-index: 2;
   }
-  .desktopBgPattern {
+  #image .desktopBgPattern {
+    position: relative;
+    top: 0em;
+  }
+  #image .desktopBgPattern img {
     position: absolute;
+    top: -27em;
+    margin-left: -46em;
   }
   #faq {
     padding: 5em 3em 5em 0;
