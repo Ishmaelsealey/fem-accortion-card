@@ -37,7 +37,16 @@ main {
   padding: 0 2em 4em;
 }
 
-.womanIllustration {
+.womanIllustrationDesktop {
+  display: none;
+  position: absolute;
+}
+
+.box {
+  display: none;
+}
+
+.womanIllustrationMobile {
   position: absolute;
   top: 0;
   margin-top: -9em;
@@ -80,6 +89,7 @@ h1 {
 .dropdownbutton p {
   flex: 1;
   text-align: left;
+  padding-right: 1em;
 }
 
 .dropdownbutton:hover {
@@ -111,6 +121,52 @@ h1 {
 }
 .attribution a {
   color: hsl(14deg, 88%, 65%);
+}
+
+@media screen and (min-width: 800px) {
+  .womanIllustrationDesktop {
+    display: block;
+    margin-left: -5em;
+  }
+  .womanIllustrationMobile {
+    display: none;
+  }
+  .drop-shadow {
+    display: none;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    max-width: 900px;
+  }
+  #image {
+    justify-content: start;
+    align-items: center;
+    position: relative;
+  }
+  #image .respectOverflow {
+    position: relative;
+    top: 3em;
+  }
+  #image .box {
+    display: block;
+    position: absolute;
+    top: 14em;
+    right: 29em;
+  }
+  .desktopBgPattern {
+    position: absolute;
+  }
+  #faq {
+    padding: 5em 3em 5em 0;
+  }
+  .attribution {
+    margin: 2em;
+  }
+  h1 {
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
