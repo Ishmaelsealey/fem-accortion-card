@@ -117,34 +117,15 @@ h1 {
 	}
 	+ .faqanswer {
 		display: block;
-		// animation: open 1s ease-in-out 1 running;
 	}
 }
 
 .faqanswer {
 	margin-top: 0.5em;
+	margin-right: 1em;
 	line-height: 1.5em;
 	display: none;
-	// height: 0;
-	// opacity: 0;
-	// overflow: hidden;
-	// animation-play-state: paused;
 }
-
-// @keyframes open {
-// 	0% {
-// 		height: 0;
-// 		opacity: 0;
-// 	}
-// 	50% {
-// 		height: fit-content;
-// 		opacity: 0;
-// 	}
-// 	100% {
-// 		height: fit-content;
-// 		opacity: 100%;
-// 	}
-// }
 
 .attribution {
 	font-size: 11px;
