@@ -17,6 +17,7 @@ body {
 	font-family: 'Kumbh Sans', sans-serif;
 	font-size: 12px;
 	font-weight: 400;
+	min-height: 100vh;
 	background: $bg_gradient;
 	display: flex;
 	flex-direction: column;
@@ -30,6 +31,7 @@ main {
 	margin: 12em 0 5em;
 	border-radius: 2em;
 	width: 90vw;
+	box-shadow: 0 2em 5em -2em $desatBlue;
 }
 
 #image {
@@ -40,7 +42,7 @@ main {
 }
 
 #faq {
-	padding: 0 2em 3em;
+	padding: 0 2em 4em;
 }
 
 .womanIllustration {
@@ -57,7 +59,7 @@ main {
 
 hr {
 	color: $divider-gray;
-	background-color: $divider-gray;
+	opacity: 50%;
 	margin: 1em 0;
 }
 
@@ -88,27 +90,30 @@ h1 {
 	}
 }
 
-.faqanswer {
-	line-height: 1.5em;
-}
-
 .dropdownbutton:hover {
 	cursor: pointer;
 }
 
 .dropdownbutton:focus {
 	font-weight: 700;
+	color: $desatBlue;
 	svg {
 		transform: scaleY(-1);
+	}
+	+ .faqanswer {
+		display: block;
+		// animation: open 1s ease-in-out 1 running;
 	}
 }
 
 .faqanswer {
+	margin-top: 0.5em;
+	line-height: 1.5em;
 	display: none;
 	// height: 0;
 	// opacity: 0;
 	// overflow: hidden;
-	// animation: open 1s ease-in-out 0;
+	// animation-play-state: paused;
 }
 
 // @keyframes open {
@@ -117,10 +122,11 @@ h1 {
 // 		opacity: 0;
 // 	}
 // 	50% {
-// 		height: min-content;
+// 		height: fit-content;
 // 		opacity: 0;
 // 	}
 // 	100% {
+// 		height: fit-content;
 // 		opacity: 100%;
 // 	}
 // }
@@ -128,5 +134,9 @@ h1 {
 .attribution {
 	font-size: 11px;
 	text-align: center;
+	color: $desatBlue;
+	margin-bottom: 1em;
+	a {
+	color: $softRed;
+	}
 }
-.attribution a { color: hsl(228, 45%, 44%); }

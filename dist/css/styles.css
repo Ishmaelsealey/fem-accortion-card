@@ -9,6 +9,7 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 12px;
   font-weight: 400;
+  min-height: 100vh;
   background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
   display: flex;
   flex-direction: column;
@@ -22,6 +23,7 @@ main {
   margin: 12em 0 5em;
   border-radius: 2em;
   width: 90vw;
+  box-shadow: 0 2em 5em -2em hsl(238deg, 29%, 16%);
 }
 
 #image {
@@ -32,7 +34,7 @@ main {
 }
 
 #faq {
-  padding: 0 2em 3em;
+  padding: 0 2em 4em;
 }
 
 .womanIllustration {
@@ -49,7 +51,7 @@ main {
 
 hr {
   color: hsl(240deg, 5%, 91%);
-  background-color: hsl(240deg, 5%, 91%);
+  opacity: 50%;
   margin: 1em 0;
 }
 
@@ -80,32 +82,35 @@ h1 {
   text-align: left;
 }
 
-.faqanswer {
-  line-height: 1.5em;
-}
-
 .dropdownbutton:hover {
   cursor: pointer;
 }
 
 .dropdownbutton:focus {
   font-weight: 700;
+  color: hsl(238deg, 29%, 16%);
 }
 .dropdownbutton:focus svg {
   transform: scaleY(-1);
 }
+.dropdownbutton:focus + .faqanswer {
+  display: block;
+}
 
 .faqanswer {
+  margin-top: 0.5em;
+  line-height: 1.5em;
   display: none;
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
+  color: hsl(238deg, 29%, 16%);
+  margin-bottom: 1em;
 }
-
 .attribution a {
-  color: hsl(228deg, 45%, 44%);
+  color: hsl(14deg, 88%, 65%);
 }
 
 /*# sourceMappingURL=styles.css.map */
