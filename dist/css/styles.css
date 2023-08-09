@@ -37,6 +37,10 @@ main {
   padding: 0 2em 4em;
 }
 
+.desktopBgPattern {
+  display: none;
+}
+
 .womanIllustrationDesktop {
   display: none;
   position: absolute;
@@ -94,6 +98,7 @@ h1 {
 
 .dropdownbutton:hover {
   cursor: pointer;
+  color: hsl(14deg, 88%, 65%);
 }
 
 .dropdownbutton:focus {
@@ -158,6 +163,7 @@ h1 {
     z-index: 2;
   }
   #image .desktopBgPattern {
+    display: block;
     position: relative;
     top: 0em;
   }
