@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+$desatBlue: hsl(238, 29%, 16%);
+$softRed: hsl(14, 88%, 65%);
+$bg_gradient: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+$text-dark-gray-blue: hsl(237, 12%, 33%);
+$text-gray-blue: hsl(240, 6%, 50%);
+$divider-gray: hsl(240, 5%, 91%);
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Kumbh Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	background: $bg_gradient;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: $text-dark-gray-blue;
+}
+
+main {
+	background: white;
+	padding: 3em 2em;
+	border-radius: 2em;
+	width: 90vw;
+}
+
+hr {
+	color: $divider-gray;
+	background-color: $divider-gray;
+	margin: 1em 0;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-weight: 700;
+	text-align: center;
+	font-size: 3em;
+	margin-bottom: 1em;
+	color: $desatBlue;
+}
+
+.faqSection {
+	width: 100%;
+}
+
+.dropdownbutton {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	border: none;
+	min-height: 2em;
+	background: white;
+	color: $text-dark-gray-blue;
+	p {
+		flex: 1;
+		text-align: left;
+	}
+}
+
+.dropdownbutton:hover {
+	cursor: pointer;
+}
+
+.faqanswer {
+	// display: none;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	// animation: open 1s ease-in-out 0;
+}
+
+// @keyframes open {
+// 	0% {
+// 		height: 0;
+// 		opacity: 0;
+// 	}
+// 	50% {
+// 		height: min-content;
+// 		opacity: 0;
+// 	}
+// 	100% {
+// 		opacity: 100%;
+// 	}
+// }
+
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 5em;
+}
+.attribution a { color: hsl(228, 45%, 44%); }

@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: hsl(237deg, 12%, 33%);
+}
+
+main {
+  background: white;
+  padding: 3em 2em;
+  border-radius: 2em;
+  width: 90vw;
+}
+
+hr {
+  color: hsl(240deg, 5%, 91%);
+  background-color: hsl(240deg, 5%, 91%);
+  margin: 1em 0;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3em;
+  margin-bottom: 1em;
+  color: hsl(238deg, 29%, 16%);
+}
+
+.faqSection {
+  width: 100%;
+}
+
+.dropdownbutton {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: none;
+  min-height: 2em;
+  background: white;
+  color: hsl(237deg, 12%, 33%);
+}
+.dropdownbutton p {
+  flex: 1;
+  text-align: left;
+}
+
+.dropdownbutton:hover {
+  cursor: pointer;
+}
+
+.faqanswer {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 5em;
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */
