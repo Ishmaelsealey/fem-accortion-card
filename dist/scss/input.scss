@@ -65,15 +65,26 @@ h1 {
 	}
 }
 
+.faqanswer {
+	line-height: 1.5em;
+}
+
 .dropdownbutton:hover {
 	cursor: pointer;
 }
 
+.dropdownbutton:focus {
+	font-weight: 700;
+	svg {
+		transform: scaleY(-1);
+	}
+}
+
 .faqanswer {
-	// display: none;
-	height: 0;
-	opacity: 0;
-	overflow: hidden;
+	display: none;
+	// height: 0;
+	// opacity: 0;
+	// overflow: hidden;
 	// animation: open 1s ease-in-out 0;
 }
 

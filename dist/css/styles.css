@@ -57,14 +57,23 @@ h1 {
   text-align: left;
 }
 
+.faqanswer {
+  line-height: 1.5em;
+}
+
 .dropdownbutton:hover {
   cursor: pointer;
 }
 
+.dropdownbutton:focus {
+  font-weight: 700;
+}
+.dropdownbutton:focus svg {
+  transform: scaleY(-1);
+}
+
 .faqanswer {
-  height: 0;
-  opacity: 0;
-  overflow: hidden;
+  display: none;
 }
 
 .attribution {
