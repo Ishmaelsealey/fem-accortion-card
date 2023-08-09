@@ -19,9 +19,32 @@ body {
 
 main {
   background: white;
-  padding: 3em 2em;
+  margin: 12em 0 5em;
   border-radius: 2em;
   width: 90vw;
+}
+
+#image {
+  position: relative;
+  min-height: 11em;
+  display: flex;
+  justify-content: center;
+}
+
+#faq {
+  padding: 0 2em 3em;
+}
+
+.womanIllustration {
+  position: absolute;
+  top: 0;
+  margin-top: -9em;
+  max-width: 240px;
+}
+
+.drop-shadow {
+  position: absolute;
+  top: 0;
 }
 
 hr {
@@ -79,7 +102,6 @@ h1 {
 .attribution {
   font-size: 11px;
   text-align: center;
-  margin-top: 5em;
 }
 
 .attribution a {
